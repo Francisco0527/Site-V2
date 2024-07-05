@@ -355,6 +355,7 @@ footer {
         min-width: 80px; /* Ajuste o valor conforme necessário */
         font-size: 12px; /* Diminui ainda mais o tamanho da fonte */
     }
+}
 
 @keyframes fadeIn {
     from {
