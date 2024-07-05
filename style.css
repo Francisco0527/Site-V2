@@ -319,6 +319,10 @@ footer {
 
 /* Media Query para telas pequenas */
 @media (max-width: 900px) {
+    .navTabs li a {
+        min-width: 100px; /* Ajuste o valor conforme necessário */
+        font-size: 14px; /* Diminui ainda mais o tamanho da fonte */
+    }
     #container {
         flex-direction: column;
         gap: 16px;
