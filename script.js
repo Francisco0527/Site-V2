@@ -52,6 +52,7 @@ form.onsubmit = function(event) {
 const cursor = document.getElementById('cursor');
 let mouseX = 0, mouseY = 0;
 let posX = 0, posY = 0;
+let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 document.addEventListener('mousemove', function(event) {
     mouseX = event.pageX;
