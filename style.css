@@ -1,0 +1,358 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Variáveis de tema */
+:root {
+    --text-color: rgb(255, 255, 255);
+    --bg-url: url(./assets/background.jpg);
+    --stroke-color: rgba(255, 255, 255, 0.5); 
+    --surface-color: rgba(255, 255, 255, 0.1);
+    --surface-color-hover: rgb(212, 0, 255, 0.2); /*Rosa*/
+    --surface-color-social: rgb(212, 0, 255, 0.2); /*Rosa*/
+}
+
+/* Estilos para o corpo da página */
+body {
+    background: var(--bg-url) center;
+    display: block;
+    min-height: 100vh;
+    position: relative;
+}
+
+body * {
+    font-family: "Montserrat", sans-serif;
+    color: var(--text-color);
+}
+
+/* Estiliza a barra de rolagem inteira */
+::-webkit-scrollbar {
+    width: 3px; /* Largura da barra de rolagem */
+    height: 3px; /* Altura da barra de rolagem horizontal */
+}
+
+/* Estiliza a parte interna da barra de rolagem (a "trilha") */
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0); /* Cor de fundo da trilha */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estiliza o polegar da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0); /* Cor do polegar */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estiliza o polegar da barra de rolagem ao passar o mouse sobre ele */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(212, 0, 255); /* Cor ao passar o mouse */
+}
+
+/* Estiliza a parte mais interna da barra de rolagem */
+::-webkit-scrollbar-corner {
+    background: rgba(0, 0, 0, 0); /* Parte onde a barra horizontal e vertical se encontram */
+}
+
+/* Estiliza a barra de rolagem para Firefox
+html {
+    scrollbar-color: rgb(212, 0, 255) rgba(212, 0, 255, 0.2);
+    scrollbar-width: thin;
+} */
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(212, 0, 255);
+    position: absolute;
+    pointer-events: none; /* Para que o cursor não interfira nos eventos de mouse */
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s linear;
+}
+
+/* Imagem */
+#image {
+    width: 100%;
+    height: 100%; 
+    background-image: url(./assets/GOPR1050.JPG);
+    background-size: cover;
+    background-position: center;
+    padding: 0; 
+    transition: height 0.5s ease; /* Adiciona transição suave */
+}
+
+/* Contêiner */
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Seção Quem sou eu */
+#aboutMe img {
+    width: 112px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+#aboutMe {
+    padding: 24px;
+    text-align: center;
+    max-width: 70%;
+    margin: auto;
+}
+
+#aboutMe h1 {
+    font-size: 32px;
+    color: rgb(212, 0, 255);
+    margin-bottom: 16px;
+}
+
+#aboutMe p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+/* Conteúdo */
+#content {
+    padding: 24px; /* Adiciona padding para o conteúdo */
+}
+
+/* Estilo do botão de contato */
+#contato {
+    padding: 10px;
+    background-color: rgb(212, 0, 255);
+    color: white;
+    margin: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    max-width: 100px;
+    border-radius: 5px;
+}
+
+/* Estilos do modal */
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    padding-top: 60px;
+    background-color: rgb(0, 0, 0, 0.8);
+    z-index: 3;
+}
+
+.modalContent {
+    background-color: #363636;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid rgb(212, 0, 255);
+    width: 50%;
+    border-radius: 10px;
+    z-index: 4;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Definir navTabs em uma linha */
+.navTabs {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 24px;
+    margin: auto;
+    justify-content: center;
+}
+.navTabs li {
+    margin: 0; /* Espaçamento entre as abas */
+}
+
+.navTabs li a {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    min-width: 200px;
+    max-width: 200px;
+    margin: auto;
+    background: var(--surface-color);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.navTabs li a.active,
+.navTabs li a:hover {
+    background-color: var(--surface-color-hover);
+    color: white;
+}
+
+/* Outros estilos existentes */
+.tabContent {
+    margin: auto;
+    border-radius: 5px;
+    max-width: 50%;
+    padding: 1.5rem;
+}
+
+.tabContent .tabPane {
+    display: none;
+}
+
+.tabContent .tabPane.active {
+    display: block;
+    animation: fadeIn .9s forwards;
+}
+
+.tabContent .tabPane h2 {
+    font-size: 2.0rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.tabContent .tabPane p {
+    font-size: 1.0rem;
+    line-height: 1.2rem;
+}
+
+/* Lista de links */
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 24px;
+}
+
+ul li a {
+    /* border: 1px solid var(--stroke-color); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    max-width: 200px;
+    margin: auto;
+    background: var(--surface-color);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+ul li a:hover {
+    background-color: var(--surface-color-hover);
+    border: 1.5px solid var(--text-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    padding: 10px;
+    max-width: 100px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(212, 0, 255);
+}
+
+/* Rodapé */
+footer {
+    color: rgb(212, 0, 255);
+    text-align: center;
+    padding: 10px 0;
+    background: var(--surface-color);
+    width: 100%;
+    position: relative; /* Remover posicionamento absoluto */
+}
+
+/* Media Query para telas pequenas */
+@media (max-width: 900px) {
+    #container {
+        flex-direction: column;
+        gap: 16px;
+    }
+    #image {
+        width: 100%; /* Ocupar 100% da largura da tela em dispositivos menores */
+        height: 25vh; /* Ajustar a altura conforme necessário */
+        order: 0; /* Alterar a ordem para que a imagem fique em cima */
+    }
+    #content {
+        width: 100%; /* Ocupar 100% da largura da tela em dispositivos menores */
+        order: 1; /* Alterar a ordem para que o conteúdo fique abaixo da imagem */
+    }
+    #profile {
+        margin-top: 0%;
+    }
+    .modal-content {
+        font-size: 12px;
+        width: 80%;
+    }
+    footer {
+        position: static; /* Fazer o footer voltar ao fluxo normal do documento */
+        margin-top: 12px;
+        padding: 10px 0; /* Ajustar padding conforme necessário */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }   
+}

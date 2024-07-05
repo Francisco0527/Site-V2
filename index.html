@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="cursor" id="cursor"></div>
+    <div id="image"></div>
+    <div id="container">
+        <div id="aboutMe">
+            <img src="./assets/profile.png" alt="Foto de perfil">
+            <h1>Francisco "Chico" Felisbino</h1>
+            <div class="infoContainer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nisi libero repellat ipsum laborum, temporibus id in necessitatibus quia magni ex optio repellendus officia qui voluptates? Rerum animi magnam necessitatibus?</p>
+            </div>
+        </div>
+
+        <!-- Abas -->
+        <ul class="navTabs">
+            <li><a href="" class="active">Instagram</a></li>
+            <li><a href="">GoPro</a></li>
+            <li><a href="">YouTube</a></li>
+            <li><a href="">DeviantArt</a></li>
+        </ul>
+        
+        <div class="tabContent">
+            <div class="tabPane active">
+                <h2>Instagram</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil deleniti itaque laudantium saepe consequatur quibusdam fugit? Dolores, harum vero. Nemo praesentium dolorum consectetur? Officiis minus optio incidunt sequi, nulla numquam?</p>
+                <ul>
+                    <li><a href="https://www.instagram.com/francisco_jf/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="tabPane">
+                <h2>GoPro</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum dolorum quae ab ullam rerum, accusamus dignissimos explicabo at incidunt autem quis, et cum a quas. Nulla suscipit nisi cumque.</p>
+                <ul>
+                    <li><a href="https://gopro.com/pt/br/" target="_blank">GoPro</a></li>
+                </ul>
+            </div>
+            <div class="tabPane">
+                <h2>YouTube</h2>
+                <p>Assista aos meus vídeos no YouTube para saber mais sobre meus projetos e interesses. Inscreva-se no meu canal para não perder as novidades!</p>
+                <ul>
+                    <li><a href="https://www.youtube.com/@FranciscoJFF" target="_blank">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="tabPane">
+                <h2>DeviantArt</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet error ipsa non fugiat iure explicabo fuga impedit dolorem temporibus necessitatibus minus repellat vitae doloribus optio deleniti eum, nisi corrupti libero.</p>
+                <img src="https://www.deviantart.com/franciscofelisbino/art/GOPR0704a-962578840" alt="">
+                <ul>
+                    <li><a href="https://www.deviantart.com/franciscofelisbino/gallery" target="_blank">DeviantArt</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- <section id="aboutMe">
+            <img src="./assets/profile.png" alt="Foto de perfil">
+            <h1>FRANCISCO "CHICO" FELISBINO</h1>
+            <div class="infoContainer">
+                <p>Sobre mim</p>
+                <ul>
+                    <li><a href="https://www.instagram.com/francisco_jf/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="youTube">
+            <div class="contentWrapper">
+                <img src="./assets/img1.jpg" alt="">
+                <div class="infoContainer">
+                    <h1>YouTube</h1>
+                    <p>Assista aos meus vídeos no YouTube para saber mais sobre meus projetos e interesses. Inscreva-se no meu canal para não perder as novidades!</p>
+                    <ul>
+                        <li><a href="https://www.youtube.com/@FranciscoJFF" target="_blank">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="goPro">
+            <h1>GoPro</h1>
+            <div class="infoContainer">
+                <p>GoPro</p>
+                <ul>
+                    <li><a href="https://gopro.com/pt/br/" target="_blank">GoPro</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="deviantArt">
+            <h1>DeviantArt</h1>
+            <div class="infoContainer">
+                <p>Mais conteudo em DeviantArt</p>
+                <ul>
+                    <li><a href="https://www.deviantart.com/franciscofelisbino/gallery" target="_blank">DeviantArt</a></li>
+                </ul>
+            </div>
+        </section> -->
+        
+            <!-- Botão contato -->
+            <div id="contato">
+                Contato
+                </div>
+                <div id="modal" class="modal">
+                    <div class="modalContent">
+                        <span class="close-button">&times;</span>
+                        <h2>Informações de contato</h2>
+                        <p>Telefone: (37)99151-9999</p>
+                        <p>e-mail: francisco@gmail.com</p>
+                        <p>Envie uma mensagem:</p>
+                        <form id="contactForm">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" required>
+            
+                            <label for="phone">Telefone:</label>
+                            <input type="tel" id="phone" name="phone" required>
+
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" required>
+                            
+                            <label for="message">Mensagem:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+        
+    </div>
+    <footer>
+        </div>
+        Todos os direitos reservados <a href="https://www.instagram.com/francisco_jf/" target="_blank">@Francisco</a>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
