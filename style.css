@@ -341,7 +341,7 @@ footer {
     }
     .modal-content {
         font-size: 12px;
-        width: 80%;
+        width: 95%;
     }
     footer {
         position: static; /* Fazer o footer voltar ao fluxo normal do documento */
