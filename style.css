@@ -339,9 +339,14 @@ footer {
     #profile {
         margin-top: 0%;
     }
-    .modal-content {
-        font-size: 12px;
-        width: 95%;
+    .modalContent {
+        background-color: #363636;
+        margin: 10% auto;
+        padding: 20px;
+        border: 1px solid rgb(212, 0, 255);
+        width: 80%;
+        border-radius: 10px;
+        z-index: 4;
     }
     footer {
         position: static; /* Fazer o footer voltar ao fluxo normal do documento */
@@ -354,6 +359,17 @@ footer {
     .navTabs li a {
         min-width: 60px; /* Ajuste o valor conforme necessário */
         font-size: 8px; /* Diminui ainda mais o tamanho da fonte */
+    }
+
+    .modalContent {
+        background-color: #363636;
+        margin: 10% auto;
+        padding: 20px;
+        border: 1px solid rgb(212, 0, 255);
+        width: 90%;
+        font-size: 12px;
+        border-radius: 10px;
+        z-index: 4;
     }
 }
 
