@@ -242,8 +242,9 @@ html {
     text-align: justify;
 }
 .tabContent .tabPane img {
+    display: block;
     padding: 5%;
-    align-items: center;
+    margin: auto;
     max-width: 500px;
     max-height: auto;
 }
