@@ -241,6 +241,12 @@ html {
     line-height: 1.2rem;
     text-align: justify;
 }
+.tabContent .tabPane img {
+    padding: 5%;
+    align-items: center;
+    max-width: 500px;
+    max-height: auto;
+}
 
 /* Lista de links */
 ul {
@@ -346,6 +352,12 @@ footer {
         height: 25vh; /* Ajustar a altura conforme necessário */
         order: 0; /* Alterar a ordem para que a imagem fique em cima */
     }
+    .tabContent .tabPane img {
+        padding: 5%;
+        align-items: center;
+        max-width: 300px;
+        max-height: auto;
+    }
     #content {
         width: 100%; /* Ocupar 100% da largura da tela em dispositivos menores */
         order: 1; /* Alterar a ordem para que o conteúdo fique abaixo da imagem */
@@ -389,6 +401,12 @@ footer {
         text-align: center;
         max-width: 80%;
         margin: auto;
+    }
+    .tabContent .tabPane img {
+        padding: 5%;
+        align-items: center;
+        max-width: 300px;
+        max-height: auto;
     }
     .modalContent {
         background-color: #363636;
