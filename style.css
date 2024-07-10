@@ -372,7 +372,7 @@ footer {
 
 @media (max-width: 700px) {
     .navTabs li a {
-        min-width: 60px; /* Ajuste o valor conforme necessário */
+        min-width: 70px; /* Ajuste o valor conforme necessário */
         font-size: 10px; /* Diminui ainda mais o tamanho da fonte */
     }
     .tabContent {
