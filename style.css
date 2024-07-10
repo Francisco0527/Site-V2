@@ -114,6 +114,7 @@ html {
 
 #aboutMe p {
     font-size: 18px;
+    text-align: justify;
     color: var(--text-color);
 }
 
@@ -238,6 +239,7 @@ html {
 .tabContent .tabPane p {
     font-size: 1.0rem;
     line-height: 1.2rem;
+    text-align: justify;
 }
 
 /* Lista de links */
