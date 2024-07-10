@@ -323,6 +323,18 @@ footer {
         min-width: 100px; /* Ajuste o valor conforme necessário */
         font-size: 14px; /* Diminui ainda mais o tamanho da fonte */
     }
+    .tabContent {
+        margin: auto;
+        border-radius: 5px;
+        max-width: 80%;
+        padding: 1.5rem;
+    }
+    #aboutMe {
+        padding: 24px;
+        text-align: center;
+        max-width: 80%;
+        margin: auto;
+    }
     #container {
         flex-direction: column;
         gap: 16px;
@@ -363,7 +375,18 @@ footer {
         min-width: 60px; /* Ajuste o valor conforme necessário */
         font-size: 10px; /* Diminui ainda mais o tamanho da fonte */
     }
-
+    .tabContent {
+        margin: auto;
+        border-radius: 5px;
+        max-width: 80%;
+        padding: 1.5rem;
+    }
+    #aboutMe {
+        padding: 24px;
+        text-align: center;
+        max-width: 80%;
+        margin: auto;
+    }
     .modalContent {
         background-color: #363636;
         margin: 10% auto;
